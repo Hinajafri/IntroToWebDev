@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <head>
+      
+<link rel="stylesheet" href="styles/restaurantStyles.css">
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+-->
+<p class="alignleft">Contact Us</p>
+<p class="alignright"><img src="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-1\Images\1024px-Circle_-_black_simple.svg.png" width="30" height="30"> <img src="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-1\Images\1024px-Circle_-_black_simple.svg.png" width="30" height="30"> <img src="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-1\Images\download.png" width="30" height="30"></p>
+</head>
+<br>
+<br>
+<script>
+function validateform(){  
+   var name=document.form.name;  
+   /*if (name.value==""){
+      name.nextElementSibling.style.display="block";
+      name.style.border="1px solid #f00";
+      return false
+   } else{
+      name.nextElementSibling.style.display="none";
+      name.style.border="1px solid transparent";
+   }*/
+     
+  if (name.value==null || name.value==""){  
+     alert("Form Data is not valid. Name can't be blank");  
+     return false;  
+   }  
+   }  
+</script>
+<body>
+   <h1 align="center">The Taste of India</h1>
+<nav>
+<a href="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-3\Restaurant-Home.html">Home</a> &nbsp;
+<a href="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-3\Restaurant-Menu.html">Menu</a> &nbsp;
+<a href="C:\Users\hinas\Documents\Repos\IntroToWebDev\classwork\Restaurant-3\Restaurant-ContactUS.html">Contact Us</a>
+</nav>
+<div class="form-center">
+<table>
+   <!--
+<div class="container">
+   <form name="custom_form">
+      <div class="form_box">
+         <div class="input_row">
+            <input type="text" placeholder="Name*" name="name">
+            <span class="error">Name is blank</span>
+         </div>
+         <div class="input_row">
+            <input type="text" placeholder="Email*" name="email">
+            <span class="error">Please enter email</span>
+         </div>
+         <div class="input_row">
+            <input type="text" placeholder="Phone*" name="phone">
+            <span class="error">Please enter phone</span>
+         </div>
+         <div class="input_row">
+            <select name="Reason for inquiry">
+               <option>Catering</option>
+               <option>Private party</option>
+               <option>Feedback</option>
+               <option>Other</option>
+            </select>
+         </div>
+         <div>
+            <input type="text" placeholder="additional*" name="Additional Information:">
+            <span class="error">Please enter email</span>
+         </div>
+         <div class="input_row">
+            <input type="checkbox" name="m" id="m">
+      <label for="m">M</label>
+      <input type="checkbox" name="t" id="t">
+      <label for="t">T</label>
+      <input type="checkbox" name="w" id="w">
+      <label for="w">W</label>
+      <input type="checkbox" name="th" id="th">
+      <label for="th">Th</label>
+      <input type="checkbox" name="f" id="f">
+      <label for="f">F</label>        
+    </div>
+    <div class="input_row">
+      <input type="submit" value="Submit">
+      <span class="error">Please enter phone</span>
+   </div>
+
+      </div>
+   </form> -->
+<form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST" enctype="multipart/form-data" name=form onsubmit="return validateform()">
+ <!--<div class="form_box">
+   <div class="input-row">
+   -->
+      <tr>
+      <th class="form"><label for="name">Name:</label></th> 
+      
+      <td><input type="text" id="name" name="name"></td>
+   </tr>
+<!--   
+</div>
+   </div>
+   -->
+   <tr>
+      <th class="form"><label for="email">Email:</label></th>
+      <td><input type="text" id="email" name="email"></td>
+   </tr> 
+  
+   <tr>
+     <th class="form"><label for="phone">Phone:</label></th>
+     <td><input type="tel" id="phone" name="phone"></td>
+   </tr>
+ 
+   <tr>
+     <th class="form"><label for="inquiry">Reason for Inquiry:</label></th>
+     <td><select name="inquiry" id="inquiry">
+     <option value="catering">Catering</option>
+     <option value="privateparty">Private party</option>
+     <option value="feedback">Feedback</option>
+     <option value="other">Other</option>
+     </select></td>
+   </tr>
+   <tr>
+     <th class="form"><label for="additional">Additional Information:</label></th>
+     <td><textarea id="additional" name="additional" rows="6" cols="30"></textarea></td>
+   </tr>
+  
+   <tr>
+      <th class="form"><label for="yesorno">Have you been to the restaurant?</label></th>
+      <td><input type="radio" name="yesorno" checked>No</input>
+      <input type="radio" name="yesorno">Yes</input></td>
+   </tr>
+   
+   <tr>
+      <th class="form">Best days to contact you:</th>
+      <td><input type="checkbox" name="m" id="m">
+      <label for="m">M</label>
+      <input type="checkbox" name="t" id="t">
+      <label for="t">T</label>
+      <input type="checkbox" name="w" id="w">
+      <label for="w">W</label>
+      <input type="checkbox" name="th" id="th">
+      <label for="th">Th</label>
+      <input type="checkbox" name="f" id="f">
+      <label for="f">F</label></td>
+   </tr>
+   <tr>
+      <td class="form"></td>
+       <td><button class="btn btn-success" type="submit">Send Request</button></td>
+    </tr>
+   </div>
+
+    <!--
+   <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      Name: <input type="text" name="name">
+      <input type="submit" value="Submit">
+      </form>
+-->
+<!-- <p>
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name" align = "center">
+ </p>
+ <p>  
+ <label for="email">Email:</label>
+ <input type="text" id="email" name="email" align = "center">
+ </p>
+ <p>
+ <label for="phone">Phone:</label>
+<input type="text" id="phone" name="phone" align = "center">
+</p>
+<p>
+<label for="reasonforinquiry">Reason for Inquiry:</label>
+<select name="reasonforinquiry" id="reasonforinquiry" align = "center">
+<option value="catering">Catering</option>
+<option value="privateparty">Private party</option>
+<option value="feedback">Feedback</option>
+<option value="other">Other</option>
+</select>
+</p>
+<p>
+<label for="additionalinformation">Additional Information:</label>
+<textarea name="info" rows="3" cols="30"></textarea>
+</p>
+<p>
+<label for="yesorno">Have you been to the restaurent?</label>
+<input type="radio" name="yesorno" checked>No</input>
+<input type="radio"name="yesorno">Yes</input>
+</p>
+<p>Best days to contact you:
+<input type="checkbox" id="m" name="m">
+<label for="m"> M</label>
+<input type="checkbox" id="t" name="t">
+<label for="t">T</label>
+<input type="checkbox" id="w" name="w">
+<label for="w">W</label>
+<input type="checkbox" id="T" name="t">
+<label for="t">T</label>
+</p>
+<p>
+<input type ="submit" value="Send Request">
+</p>
+</form>
+-->
+</table>
+</div>
+</div>
+</body>
+<hr>
+<footer align= center>
+1294 Markham,ON,L310T2<br>
+(437)900-768
+</footer>
+<hr>

@@ -1,0 +1,103 @@
+body {
+font-style: Bold;
+font-family:"Oswald", "Montserrat";
+font-size:20px;
+padding:20px;
+margin:20px;
+text-align:justify;
+color:white;
+background-color:#67595E;
+}
+
+nav {
+background-color:#E8B4B8;
+}
+
+a{
+font-style:Bold;
+font-family:"Oswald", "Montserrat";
+font-size:24px;
+color:white;
+}
+
+h1 {
+font-style:Bold;
+font-family:"Oswald", "Montserrat";
+font-size:32px;
+text-align:center;
+color:White;
+background-color:#EED6D3;
+}
+
+h2 {
+font-style:Bold;
+font-family:"Oswald", "Montserrat";
+font-size:32px;
+text-align:center;
+color:white;
+}
+
+p {
+font-style:Bold;
+font-family:"Oswald", "Montserrat";
+font-size:20px;
+color:white;
+text-align: center;
+display: block;
+}
+
+footer {
+font-style:Bold;
+font-family:"Oswald", "Montserrat";
+font-size:20px;
+text-align:center;
+color:white;
+background-color:#A49393;
+}
+
+form>label{
+text-align:center;
+}
+
+label {
+display:inline-block;
+text-align:justify
+float:right;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.form-center {
+	display:flex;
+	justify-content: center;
+  }
+  th{
+	text-align: right;  
+}
+/* unvisited link */
+.nav>a:link {
+    color: rgb(117, 74, 74);
+    text-decoration: underline;
+  }
+  
+  /* visited link */
+  .nav>a:visited {
+    color: burlywood;
+  }
+  
+  /* mouse over link */
+  .nav>a:hover {
+    color: hotpink;
+    font-weight: bold;
+  }
+  
+  /* selected link */
+  .nav>a:active {
+    color:green;
+    text-decoration: none;
+
+  }
